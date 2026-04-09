@@ -1,78 +1,115 @@
-# Full Stack Task Manager
+# 🚀 Full Stack Task Manager
 
-A simple, modern, full-stack task manager application built with React, Node.js, and Express.
+A modern, full-stack Task Manager application built using **React, Node.js, and Express**.  
+This project allows users to manage tasks efficiently with a clean UI and RESTful API integration.
 
-## Features
+---
 
-- **Create Tasks**: Quickly add new tasks
-- **Mark as Completed**: Toggle completion status
-- **Delete Tasks**: Remove tasks you no longer need
-- **Filter**: View All, Pending, or Completed tasks
-- **Data Persistence**: Uses a simple file-based JSON storage on the backend
-- **Beautiful UI**: Modern dark-mode aesthetic with micro-animations
+## 📸 Preview
 
-## Tech Stack
+![Preview](frontend/public/preview.png)
 
-- **Frontend**: React, Vite, Axios, Lucide React (for icons)
-- **Backend**: Node.js, Express, CORS
+---
 
-## Project Structure
+## ✨ Features
 
-```
+- ✅ Create new tasks  
+- ✔️ Mark tasks as completed  
+- ❌ Delete tasks  
+- 🔍 Filter tasks (All / Completed / Pending)  
+- 💾 Persistent storage using JSON file  
+- 🎨 Clean, modern UI with smooth interactions  
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React (Vite)  
+- Axios  
+- Lucide React (icons)  
+- CSS (custom styling)  
+
+### Backend
+- Node.js  
+- Express.js  
+- CORS  
+
+---
+
+## 📂 Project Structure
+
+
 Task Manager/
-├── backend/                  # Node.js backend
-│   ├── components/           # (N/A for backend, typical Express structure)
-│   ├── controllers/          # Request handlers
-│   │   └── taskController.js
-│   ├── data/                 # JSON file storage
-│   │   └── tasks.json
-│   ├── routes/               # Express routes
-│   │   └── taskRoutes.js
-│   ├── package.json          # Backend dependencies
-│   └── server.js             # Entry point
+├── backend/
+│ ├── controllers/
+│ │ └── taskController.js
+│ ├── data/
+│ │ └── tasks.json
+│ ├── routes/
+│ │ └── taskRoutes.js
+│ ├── package.json
+│ └── server.js
 │
-└── frontend/                 # React frontend
-    ├── src/
-    │   ├── api/
-    │   │   └── taskApi.js    # Axios configuration
-    │   ├── components/       # Reusable UI components
-    │   │   ├── FilterButtons.jsx
-    │   │   ├── TaskForm.jsx
-    │   │   └── TaskItem.jsx
-    │   ├── App.jsx           # Main application state
-    │   ├── index.css         # Global styles and design system
-    │   └── main.jsx          # Entry point
-    └── package.json          # Frontend dependencies
-```
+└── frontend/
+├── src/
+│ ├── api/
+│ │ └── taskApi.js
+│ ├── components/
+│ │ ├── FilterButtons.jsx
+│ │ ├── TaskForm.jsx
+│ │ └── TaskItem.jsx
+│ ├── App.jsx
+│ ├── index.css
+│ └── main.jsx
+└── package.json
 
-## Setup Instructions
 
-### 1. Start the Backend
+---
 
-Open a terminal and navigate to the `backend` folder:
+## ⚙️ Setup & Run Instructions
+
+### 1️⃣ Clone the Repository
 
 ```bash
+git clone https://github.com/Mausamkumarsingh/Task-Manager.git
+cd Task-Manager
+2️⃣ Run Backend
 cd backend
 npm install
 npm start
-```
-The backend API will run on `http://localhost:5000`.
 
-### 2. Start the Frontend
+Backend runs on:
+👉 http://localhost:5000
 
-Open a new terminal and navigate to the `frontend` folder:
+3️⃣ Run Frontend
 
-```bash
+Open a new terminal:
+
 cd frontend
-npm install # if not already installed
+npm install
 npm run dev
-```
 
-The React app will be available at `http://localhost:5173` (or another port specified by Vite).
+Frontend runs on:
+👉 http://localhost:5173
 
-## API Endpoints
+🔌 API Endpoints
+Method	Endpoint	Description
+GET	/tasks	Get all tasks
+POST	/tasks	Create new task
+PATCH	/tasks/:id	Toggle task completion
+DELETE	/tasks/:id	Delete a task
+⚖️ Design Decisions
+Used file-based JSON storage instead of a database to keep the project lightweight
+Focused on clean architecture and readability
+Maintained modular structure (controllers, routes, API separation)
+🚧 Future Improvements
+Add database (MongoDB / PostgreSQL)
+Implement authentication
+Add edit/update functionality
+Add testing
+Deploy with Vercel + Render
+👨‍💻 Author
 
-- `GET /tasks` - Fetch all tasks
-- `POST /tasks` - Create a new task (expects `{ "title": "Task name" }`)
-- `PATCH /tasks/:id` - Toggle task completion status
-- `DELETE /tasks/:id` - Delete a task by ID
+Mausam Kumar
+Full Stack Developer
