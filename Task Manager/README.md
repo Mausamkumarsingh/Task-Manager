@@ -7,7 +7,7 @@ This project allows users to manage tasks efficiently with a clean UI and RESTfu
 
 ## 📸 Preview
 
-![Preview](preview.png)
+![Preview](Taskimage.png)
 ---
 
 ## ✨ Features
