@@ -93,6 +93,8 @@ npm run dev
 Frontend runs on:
 👉 http://localhost:5173
 
+🔌 API Endpoints
+
 | Method | Endpoint   | Description            |
 | ------ | ---------- | ---------------------- |
 | GET    | /tasks     | Get all tasks          |
@@ -101,15 +103,17 @@ Frontend runs on:
 | DELETE | /tasks/:id | Delete a task          |
 
 ⚖️ Design Decisions
-Used file-based JSON storage instead of a database to keep the project lightweight
-Focused on clean architecture and readability
-Maintained modular structure (controllers, routes, API separation)
+. Used file-based JSON storage instead of a database to keep the project lightweight
+. Focused on clean architecture and readability
+. Maintained modular structure (controllers, routes, API separation)
+
 🚧 Future Improvements
-Add database (MongoDB / PostgreSQL)
-Implement authentication
-Add edit/update functionality
-Add testing
-Deploy with Vercel + Render
+. Add database (MongoDB / PostgreSQL)
+. Implement authentication
+. Add edit/update functionality
+. Add testing
+. Deploy with Vercel + Render
+
 👨‍💻 Author
 
 Mausam Kumar
