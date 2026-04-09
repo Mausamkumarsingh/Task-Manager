@@ -93,12 +93,13 @@ npm run dev
 Frontend runs on:
 👉 http://localhost:5173
 
-🔌 API Endpoints
-Method	Endpoint	Description
-GET	/tasks	Get all tasks
-POST	/tasks	Create new task
-PATCH	/tasks/:id	Toggle task completion
-DELETE	/tasks/:id	Delete a task
+| Method | Endpoint   | Description            |
+| ------ | ---------- | ---------------------- |
+| GET    | /tasks     | Get all tasks          |
+| POST   | /tasks     | Create new task        |
+| PATCH  | /tasks/:id | Toggle task completion |
+| DELETE | /tasks/:id | Delete a task          |
+
 ⚖️ Design Decisions
 Used file-based JSON storage instead of a database to keep the project lightweight
 Focused on clean architecture and readability
